@@ -1,4 +1,4 @@
-package com.example.myapplication.Activities;
+package com.example.myapplication.Activity;
 
 import android.os.Bundle;
 
@@ -13,4 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 }
