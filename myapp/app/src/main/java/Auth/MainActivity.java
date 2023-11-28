@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package Auth;
 
 import android.os.Bundle;
 

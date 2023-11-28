@@ -2,9 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
+        android:requestLegacyExternalStorage="true"
         tools:targetApi="31">
 
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name="Student.ExportActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -27,9 +32,17 @@
         </activity>
 
         <activity
-            android:name=".Activity.Account.AddAccountActivity"
+            android:name="Auth.LoginActivity"
             android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
+
+        <activity
+            android:name="Account.AddAccountActivity"
+            android:exported="true"></activity>
 
         <!--<activity
             android:name=".Activity.SplashActivity"
@@ -37,17 +50,22 @@
         </activity>-->
 
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="Auth.MainActivity"
             android:exported="true" />
 
         <activity
-            android:name=".Activity.Account.AccountActivity"
+            android:name="Account.AccountActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.Account.ProfileActivity"
+            android:name="Account.ProfileActivity"
             android:exported="true" />
-        <activity android:name=".Activity.Account.EditAccountActivity" android:exported="true" />
-        <activity android:name=".Activity.Account.HistoryActivity" android:exported="true"/>
+        <activity
+            android:name="Account.EditAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name="Account.HistoryActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

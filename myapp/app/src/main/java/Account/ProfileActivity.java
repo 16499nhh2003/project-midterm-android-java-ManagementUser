@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity.Account;
+package Account;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,15 +19,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.Activity.LoginActivity;
-import com.example.myapplication.Activity.MainActivity;
 import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -36,8 +32,6 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
-import java.util.Objects;
 import java.util.UUID;
 
 public class ProfileActivity extends AppCompatActivity {

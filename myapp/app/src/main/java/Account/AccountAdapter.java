@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity.Account;
+package Account;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;

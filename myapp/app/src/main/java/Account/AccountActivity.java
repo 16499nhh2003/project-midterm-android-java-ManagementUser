@@ -1,6 +1,4 @@
-package com.example.myapplication.Activity.Account;
-
-import static android.content.ContentValues.TAG;
+package Account;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -22,7 +20,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.Activity.LoginActivity;
+import Auth.LoginActivity;
 import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

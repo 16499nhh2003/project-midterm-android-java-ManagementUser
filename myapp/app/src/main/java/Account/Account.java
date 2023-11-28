@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity.Account;
+package Account;
 
 public class Account {
     private String id;

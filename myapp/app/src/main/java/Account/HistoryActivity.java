@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity.Account;
+package Account;
 
 import android.content.Intent;
 import android.os.Bundle;
